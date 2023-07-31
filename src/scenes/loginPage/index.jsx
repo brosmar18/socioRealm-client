@@ -14,6 +14,22 @@ const LoginPage = () => {
             SocioRealm
         </Typography>
         </Box>
+        <Box
+            width={isNonMobileScreens ? "50%" : "93%"}
+            p="2rem"
+            m="2rem auto"
+            borderRadius="1.5rem"
+            backgroundColor={theme.palette.background.alt}
+        >
+            <Typography
+                fontWeight="500"
+                variant='h5'
+                sx={{ mb: "1.5rem"}}
+            >
+
+            </Typography>
+
+        </Box>
     </Box>
 }
 
