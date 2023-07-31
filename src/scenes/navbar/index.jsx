@@ -1,29 +1,29 @@
-import { useState } from 'react';
+import { useState } from "react";
 import {
-    Box,
-    IconButton,
-    InputBase,
-    Typography,
-    Select,
-    MenuItem,
-    FormControl,
-    useTheme,
-    useMediaQuery
-} from '@mui/icons-material';
+  Box,
+  IconButton,
+  InputBase,
+  Typography,
+  Select,
+  MenuItem,
+  FormControl,
+  useTheme,
+  useMediaQuery,
+} from "@mui/material";
 import {
-    Search, 
-    Message,
-    DarkMode,
-    LightMode,
-    Notifications,
-    Help,
-    Menu,
-    Close
-} from '@mui/icons-material';
-import { useDispatch, useSelector } from 'react-redux';
-import { setMode, setLogout } from 'state';
-import FlexBetween from 'components/FlexBetween';
-import { useNavigate } from 'react-router-dom';
+  Search,
+  Message,
+  DarkMode,
+  LightMode,
+  Notifications,
+  Help,
+  Menu,
+  Close,
+} from "@mui/icons-material";
+import { useDispatch, useSelector } from "react-redux";
+import { setMode, setLogout } from "state";
+import { useNavigate } from "react-router-dom";
+import FlexBetween from "components/FlexBetween";
 
 const NavBar = () => {
     const [isMobileMenuToggled, setIsMobileMenuToggled] = useState(false);
@@ -101,7 +101,7 @@ const NavBar = () => {
                         }}
                         input={<InputBase />}
                     >
-                        <MenuItem value={fullname}>
+                        <MenuItem value={fullName}>
                             <MenuItem onClick={() => dispatch(setLogout())}>Log Out</MenuItem>
                         </MenuItem>
                     </Select>
