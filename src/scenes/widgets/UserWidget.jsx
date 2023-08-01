@@ -48,4 +48,13 @@ const UserWidget = ({ userId, picturePath }) => {
         impressions,
         friends,
     } = user;
-}
+
+    return (
+        <WidgetWrapper>
+            { /* FIRST ROW */}
+            <FlexBetween>
+                
+            </FlexBetween>
+        </WidgetWrapper>
+    )
+};
