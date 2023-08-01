@@ -197,9 +197,20 @@ const Form = () => {
                         >
                             {isLogin ? "LOGIN" : "REGISTER"}
                             <Typography
-                            
+                                onClick={() => {
+                                    setPageType(isLogin ? "register" : "login");
+                                    resetForm();
+                                }}
+                                sx={{
+                                    textDecoration: "underline",
+                                    color: palette.primary.main,
+                                    "&:hover": {
+                                        cursor: "pointer",
+                                        color: palette.primary.light,
+                                    },
+                                }}
                             >
-
+                                {isLogin ? "Don't have an account? Sign up Here." : "Already have an account? Login here."}
                             </Typography>
                         </Button>
                     </Box>
