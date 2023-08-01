@@ -80,6 +80,10 @@ const PostWidget = ({
                             <Typography>{comments.length}</Typography>
                         </FlexBetween>
                     </FlexBetween>
+
+                    <IconButton>
+                        <ShareOutlined />
+                    </IconButton>
                 </FlexBetween>
             </FlexBetween>
         </WidgetWrapper>
