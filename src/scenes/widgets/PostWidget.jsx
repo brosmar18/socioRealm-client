@@ -49,10 +49,21 @@ const PostWidget = ({
 
 
     return (
-        <div>
-
-        </div>
-    )
-}
+        <WidgetWrapper m="2rem 0">
+            <Typography color={main} sx={{ mt: "1rem" }}>
+                {description}
+            </Typography>
+            {picturePath && (
+                <img
+                    width="100%"
+                    height="auto"
+                    alt="post"
+                    style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
+                    src={`http://localhost:3001/assets/${picturePath}`}
+                />
+            )}
+        </WidgetWrapper>
+    );
+};
 
 export default PostWidget
