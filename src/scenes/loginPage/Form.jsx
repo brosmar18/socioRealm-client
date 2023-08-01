@@ -54,6 +54,19 @@ const Form = () => {
     const isNonMobile = useMediaQuery("(min-width:600px)");
     const isLogin = pageType === "login";
     const isRegister = pageType === "register";
-}
+
+    const handleFormSubmit = async(values, onSubmitProps) => {};
+
+    return (
+        <Formik
+            onSubmit={handleFormSubmit}
+            initialValues={isLogin ? initialValesLogin : initialValuesRegister}
+            validationSchema={isLogin ? loginSchema : registerSchema}
+        >
+            
+
+        </Formik>
+    )
+};
 
 export default Form;
