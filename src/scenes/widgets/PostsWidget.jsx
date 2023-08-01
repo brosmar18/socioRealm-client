@@ -41,7 +41,22 @@ const PostsWidget = () => {
 
   return (
     <>
-    
+        {posts.map(
+            ({
+                _id,
+                userId,
+                firstName,
+                lastName,
+                description,
+                location,
+                picturePath,
+                userPicturePath,
+                likes,
+                comments,
+            }) => (
+                <PostWidget />
+            )
+        )}
     </>
   )
 }
