@@ -73,13 +73,22 @@ const UserWidget = ({ userId, picturePath }) => {
                         >
                             {firstName} {lastName}
                         </Typography>
-                        <Typography color={medium}>{friends.length} friends</Typography>
+                        <Typography color={medium}>friends</Typography>
                     </Box>
                 </FlexBetween>
                 <ManageAccountsOutlined />
             </FlexBetween>
 
             <Divider />
+
+            {/* SECOND ROW */}
+            <Box p="1rem 0">
+                <Box>
+                    <LocationOnOutlined fontSize="large" sx={{ color: main}} />
+                </Box>
+            </Box>
         </WidgetWrapper>
     )
 };
+
+export default UserWidget;
