@@ -20,4 +20,32 @@ const UserWidget = ({ userId, picturePath }) => {
     const dark = palette.neutral.dark;
     const medium = palette.neutral.medium;
     const main = palette.neutral.main;
+
+    const getUser = async () => {
+        const response = await fetch(`http://localhost:3001/users/${userId}`,
+        {
+            method: "GET",
+            headers: { authorization: `Bearer ${token}`},
+        });
+        const data = await response.json();
+        setUser(data);
+    };
+
+    useEffect(() => {
+        getUser();
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
+    if (!user) {
+        return null;
+    }
+
+    const {
+        firstName,
+        lastName,
+        location,
+        occupation,
+        viewedProfile,
+        impressions,
+        friends,
+    } = user;
 }
