@@ -69,7 +69,7 @@ const PostsWidget = () => {
             )
         )}
     </>
-  )
-}
+  );
+};
 
 export default PostsWidget
