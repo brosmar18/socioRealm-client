@@ -39,5 +39,9 @@ const initialValuesRegister = {
     location: "",
     occupation: "",
     picture: "",
-}
+};
 
+const initialValesLogin = {
+    email: "",
+    password: "",
+};
