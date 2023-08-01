@@ -1,4 +1,4 @@
-import { 
+import {
     ManageAccountsOutlined,
     EditOutlined,
     LocationOnOutlined,
@@ -23,10 +23,10 @@ const UserWidget = ({ userId, picturePath }) => {
 
     const getUser = async () => {
         const response = await fetch(`http://localhost:3001/users/${userId}`,
-        {
-            method: "GET",
-            headers: { authorization: `Bearer ${token}`},
-        });
+            {
+                method: "GET",
+                headers: { authorization: `Bearer ${token}` },
+            });
         const data = await response.json();
         setUser(data);
     };
@@ -89,11 +89,11 @@ const UserWidget = ({ userId, picturePath }) => {
                     gap="1rem"
                     mb="0.5rem"
                 >
-                    <LocationOnOutlined fontSize="large" sx={{ color: main}} />
+                    <LocationOnOutlined fontSize="large" sx={{ color: main }} />
                     <Typography color={medium}>{location}</Typography>
                 </Box>
                 <Box display="flex" alignItems="center" gap="1rem">
-                    <WorkOutlineOutlined fontSize="large" sx={{ color: main}} />
+                    <WorkOutlineOutlined fontSize="large" sx={{ color: main }} />
                     <Typography color={medium}>{occupation}</Typography>
                 </Box>
             </Box>
@@ -103,7 +103,10 @@ const UserWidget = ({ userId, picturePath }) => {
             {/* THIRD ROW */}
             <Box p="1rem 0">
                 <FlexBetween mb="0.5rem">
-                <Typography color={medium}>Who's viewed your profile</Typography>
+                    <Typography color={medium}>Who's viewed your profile</Typography>
+                    <Typography color={main} fontWeight="500">
+                        {viewedProfile}
+                    </Typography>
                 </FlexBetween>
             </Box>
 
