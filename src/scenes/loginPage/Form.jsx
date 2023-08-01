@@ -31,3 +31,13 @@ const loginSchema = yup.object().shape({
     password: yup.string().required("required")
 });
 
+const initialValuesRegister = {
+    lastName: "",
+    lastName: "",
+    email: "",
+    password: "",
+    location: "",
+    occupation: "",
+    picture: "",
+}
+
