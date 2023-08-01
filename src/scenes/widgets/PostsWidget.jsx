@@ -30,6 +30,15 @@ const PostsWidget = () => {
         dispatch(setPosts({ posts: data }));
     };
 
+
+    useEffect(() => {
+        if (isProfile) {
+            getUserPosts();
+        } else {
+            getPosts();
+        }
+    }, []);
+
   return (
     <>
     
