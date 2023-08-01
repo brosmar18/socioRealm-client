@@ -55,7 +55,7 @@ const Form = () => {
     const isLogin = pageType === "login";
     const isRegister = pageType === "register";
 
-    const handleFormSubmit = async(values, onSubmitProps) => {};
+    const handleFormSubmit = async (values, onSubmitProps) => { };
 
     return (
         <Formik
@@ -79,12 +79,12 @@ const Form = () => {
                         gap="30px"
                         gridTemplateColumns="repeat(4, minmax(0, 1fr))"
                         sx={{
-                            "& > div": { gridColumn: isNonMobile ? undefined : "span 4"},
+                            "& > div": { gridColumn: isNonMobile ? undefined : "span 4" },
                         }}
                     >
                         {isRegister && (
                             <>
-                                <TextField 
+                                <TextField
                                     label="First Name"
                                     onBlur={handleBlur}
                                     onChange={handleChange}
@@ -92,9 +92,9 @@ const Form = () => {
                                     name="firstName"
                                     error={Boolean(touched.firstName) && Boolean(errors.firstName)}
                                     helperText={touched.firstName && errors.firstName}
-                                    sx={{ gridColumn: "span 2"}}
+                                    sx={{ gridColumn: "span 2" }}
                                 />
-                                <TextField 
+                                <TextField
                                     label="Last Name"
                                     onBlur={handleBlur}
                                     onChange={handleChange}
@@ -102,9 +102,9 @@ const Form = () => {
                                     name="lastName"
                                     error={Boolean(touched.lastName) && Boolean(errors.lastName)}
                                     helperText={touched.lastName && errors.lastName}
-                                    sx={{ gridColumn: "span 2"}}
+                                    sx={{ gridColumn: "span 2" }}
                                 />
-                                <TextField 
+                                <TextField
                                     label="Location"
                                     onBlur={handleBlur}
                                     onChange={handleChange}
@@ -112,9 +112,9 @@ const Form = () => {
                                     name="location"
                                     error={Boolean(touched.location) && Boolean(errors.location)}
                                     helperText={touched.location && errors.location}
-                                    sx={{ gridColumn: "span 4"}}
+                                    sx={{ gridColumn: "span 4" }}
                                 />
-                                <TextField 
+                                <TextField
                                     label="Occupation"
                                     onBlur={handleBlur}
                                     onChange={handleChange}
@@ -122,7 +122,7 @@ const Form = () => {
                                     name="occupation"
                                     error={Boolean(touched.occupation) && Boolean(errors.occupation)}
                                     helperText={touched.occupation && errors.occupation}
-                                    sx={{ gridColumn: "span 4"}}
+                                    sx={{ gridColumn: "span 4" }}
                                 />
                                 <Box
                                     gridColumn="span 4"
@@ -133,16 +133,16 @@ const Form = () => {
                                     <Dropzone
                                         acceptedFiles=".jpg,.jpeg,.png"
                                         multiple={false}
-                                        onDrop={(acceptedFiles) => 
-                                        setFieldValue("picture", acceptedFiles[0])}
+                                        onDrop={(acceptedFiles) =>
+                                            setFieldValue("picture", acceptedFiles[0])}
                                     >
                                         {({ getRootProps, getInputProps }) => (
                                             <Box
                                                 {...getRootProps()}
                                                 borde={`2px dashed ${palette.primary.main}`}
                                                 p="1rem"
-                                                sx={{ "&:hover": { cursor: "pointer"}}}
-                                            >   
+                                                sx={{ "&:hover": { cursor: "pointer" } }}
+                                            >
                                                 <input {...getInputProps()} />
                                                 {!values.picture ? (
                                                     <p>Add Picture Here</p>
@@ -158,6 +158,29 @@ const Form = () => {
                                 </Box>
                             </>
                         )}
+
+                        <TextField
+                            label="Email"
+                            onBlur={handleBlur}
+                            onChange={handleChange}
+                            value={values.email}
+                            name="email"
+                            error={Boolean(touched.email) && Boolean(errors.email)}
+                            helperText={touched.email && errors.email}
+                            sx={{ gridColumn: "span 4" }}
+                        />
+                        <TextField
+                            label="Password"
+                            type='password'
+                            onBlur={handleBlur}
+                            onChange={handleChange}
+                            value={values.password}
+                            name="password"
+                            error={Boolean(touched.password) && Boolean(errors.password)}
+                            helperText={touched.password && errors.password}
+                            sx={{ gridColumn: "span 4" }}
+                        />
+
                     </Box>
                 </Form>
             )}
