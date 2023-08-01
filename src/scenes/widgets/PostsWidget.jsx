@@ -5,10 +5,15 @@ import PostWidget from "./PostWidget";
 
 
 const PostsWidget = () => {
+    const dispatch = useDispatch();
+    const posts = useSelector((state) => state.posts);
+    const token = useSelector((state) => state.token);
+    
+
   return (
-    <div>
-      
-    </div>
+    <>
+    
+    </>
   )
 }
 
