@@ -7,7 +7,7 @@ import FlexBetween from "./FlexBetween";
 import UserImage from "./UserImage";
 
 
-const Friend = () => {
+const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
   return (
     <div>
       
