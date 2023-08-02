@@ -30,8 +30,10 @@ const ProfilePage = () => {
       if (!user) return null;
 
     return (
-        <div>Profile Page</div>
-    )
-}
+        <Box>
+            <Navbar />
+        </Box>      
+    );
+};
 
 export default ProfilePage;
