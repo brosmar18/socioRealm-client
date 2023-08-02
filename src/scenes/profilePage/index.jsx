@@ -23,7 +23,10 @@ const ProfilePage = () => {
         setUser(data);
     };
 
-    
+    useEffect(() => {
+        getUser();
+      }, []); 
+      
     return (
         <div>Profile Page</div>
     )
