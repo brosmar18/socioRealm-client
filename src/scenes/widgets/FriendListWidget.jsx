@@ -29,9 +29,16 @@ const FriendListWidget = ({ userId }) => {
   }, []); 
 
   return (
-    <div>
-      FriendListWidget
-    </div>
+    <WidgetWrapper>
+      <Typography
+        color={palette.neutral.dark}
+        variant="h5"
+        fontWeight="500"
+        sx={{ mb: "1.5rem" }}
+      >
+        Friend List
+      </Typography>
+    </WidgetWrapper>
   )
 }
 
