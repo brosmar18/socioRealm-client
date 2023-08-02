@@ -8,9 +8,13 @@ const AdvertWidget = () => {
   const main = palette.neutral.main;
   const medium = palette.neutral.medium;
   return (
-    <div>
-      AdvertWidget
-    </div>
+    <WidgetWrapper>
+      <FlexBetween>
+        <Typography color={dark} variant="h5" fontWeight="500">
+          Sponsored
+        </Typography>
+      </FlexBetween>
+    </WidgetWrapper>
   )
 }
 
