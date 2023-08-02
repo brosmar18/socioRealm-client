@@ -24,6 +24,7 @@ const AdvertWidget = () => {
       />
       <FlexBetween>
         <Typography color={main}>MikaCosmetics</Typography>
+        <Typography color={medium}>mikacosmetics.com</Typography>
       </FlexBetween>
     </WidgetWrapper>
   )
