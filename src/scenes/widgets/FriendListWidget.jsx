@@ -5,7 +5,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setFriends } from "state";
 
-
 const FriendListWidget = ({ userId }) => {
   const dispatch = useDispatch();
   const { palette } = useTheme();
@@ -26,7 +25,7 @@ const FriendListWidget = ({ userId }) => {
 
   useEffect(() => {
     getFriends();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <WidgetWrapper>
@@ -50,7 +49,7 @@ const FriendListWidget = ({ userId }) => {
         ))}
       </Box>
     </WidgetWrapper>
-  )
-}
+  );
+};
 
-export default FriendListWidget
+export default FriendListWidget;
