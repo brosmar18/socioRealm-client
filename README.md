@@ -32,6 +32,24 @@ The `scenes` directory further contains:
 - `navbar`: Components for the navigation bar
 - `widgets`: Various widgets used across the application
 
+## Tools Used
+
+This project uses the following dependencies:
+
+- `@emotion/react` and `@emotion/styled`: Libraries for CSS-in-JS styling.
+- `@mui/icons-material` and `@mui/material`: Material-UI library for React components and icons.
+- `@reduxjs/toolkit`: Toolkit for efficient Redux development.
+- `@testing-library/jest-dom`, `@testing-library/react`, and `@testing-library/user-event`: Libraries for testing React components.
+- `dotenv`: Module to load environment variables from a `.env` file.
+- `formik`: Library for building forms in React.
+- `react`, `react-dom`, and `react-scripts`: Core libraries for building and running React applications.
+- `react-dropzone`: React component for handling file uploads.
+- `react-redux`: Official React bindings for Redux.
+- `react-router-dom`: DOM bindings for React Router.
+- `redux-persist`: Library to persist and rehydrate a Redux store.
+- `web-vitals`: Library for measuring web vitals.
+- `yup`: JavaScript schema builder for value parsing and validation.
+
 ## Setup
 
 To set up the project for development, follow these steps:
@@ -42,9 +60,9 @@ To set up the project for development, follow these steps:
 
 (Note: These steps assume that Node.js and npm are installed on your system)
 
-Please refer to the individual directories for more specific documentation.
 
-## Acknowledgments
 
-This project was developed by following along with a YouTube course. Much of the code is based on the lessons learned in the course. The original course can be found at [YouTube Course](<https://www.youtube.com/watch?v=K8YELRmUb5o>).
+#### Acknowledgments
+
+This project was developed by following along with a YouTube course. Much of the code is based on the lessons learned in the course. The original course can be found at [YouTube Course](https://www.youtube.com/watch?v=K8YELRmUb5o).
 
