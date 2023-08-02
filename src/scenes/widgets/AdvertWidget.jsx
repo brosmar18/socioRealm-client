@@ -13,6 +13,7 @@ const AdvertWidget = () => {
         <Typography color={dark} variant="h5" fontWeight="500">
           Sponsored
         </Typography>
+        <Typography color={medium}>Create Ad</Typography>
       </FlexBetween>
     </WidgetWrapper>
   )
