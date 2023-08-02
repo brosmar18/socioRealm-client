@@ -7,6 +7,7 @@ const AdvertWidget = () => {
   const dark = palette.neutral.dark;
   const main = palette.neutral.main;
   const medium = palette.neutral.medium;
+
   return (
     <WidgetWrapper>
       <FlexBetween>
@@ -31,7 +32,7 @@ const AdvertWidget = () => {
         is exfoliating skin and shining like light.
       </Typography>
     </WidgetWrapper>
-  )
-}
+  );
+};
 
-export default AdvertWidget
+export default AdvertWidget;
